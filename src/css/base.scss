@@ -3,6 +3,7 @@ $accent-color: #C7A17A;
 $accent-color-2: #F9F5E8;
 $dark-gray: #151D28;
 $light-gray: #EDF0F5;
+$light-gray-shadow: #edf0f5cb;
 
 %fontDisplayLarge {
     font-family: 'Montserrat';
@@ -103,4 +104,8 @@ table {
     text-align: center;
     color: $primary-color;
     margin: 0px 0px 10px;
+}
+
+.wrapper {
+    min-width: 1400px;
 }

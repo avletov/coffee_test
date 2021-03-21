@@ -1,0 +1,94 @@
+.combo {
+    display: flex;
+    background-color: $primary-color;
+
+    &__left-aside {
+        width: calc(100% - 350px);
+        height: 700px;
+        background-color: white;
+    }
+}
+
+.combo-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.you-favorite-slider {
+    position: relative;
+    width: 100%;
+    height: 542px;
+    overflow: hidden;
+}
+
+.combo-slider {
+    position: relative;
+    width: 100%;
+    height: 542px;
+    overflow: hidden;
+}
+
+.combo-slide {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    display: flex;
+    transition: ease 1s;
+}
+
+.card-combo {
+    text-align: center;
+    width: 350px;
+    height: 560px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px $light-gray-shadow;
+
+    &__img {
+        width: 256px;
+        height: 256px;
+        background-size: cover;
+    }
+
+    &__content {
+        padding: 45px;
+    }
+
+    &__price-container {
+        display: flex;
+    }
+
+    &__price {
+        display: block;
+        @extend %fontPriceProduct;
+        color: $accent-color;
+        margin-bottom: 10px;
+    }
+
+    &__pre-price {
+        display: block;
+        @extend %fontPriceProduct;
+        font-size: 14px;
+        color: $primary-color;
+        text-decoration: line-through;
+        margin-left: 10px;
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: 25px;
+        @extend %fontTitle;
+        text-align: left;
+        color: $dark-gray;
+    }
+
+    &__description {
+        display: block;
+        @extend %fontDescription;
+        text-align: left;
+        color: $dark-gray;
+    }
+}

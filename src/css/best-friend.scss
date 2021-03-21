@@ -1,0 +1,130 @@
+.best-friend {
+    display: flex;
+    position: relative;
+
+    &__left-aside {
+        width: calc(100% - 350px);
+        height: 800px;
+        background-color: $light-gray;
+    }
+}
+
+.best-friend-container {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.card-best-friend {
+    display: flex;
+    position: absolute;
+    top: 140px;
+    left: 400px;
+    width: 760px;
+    height: 460px;
+    padding: 20px 50px 50px 200px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0px 0px 20px $light-gray-shadow;
+
+    &__img {
+        position: absolute;
+        top: 50px;
+        left: -230px;
+        width: 400px;
+        height: 400px;
+    }
+
+    &__content {
+        padding: 45px;
+    }
+
+    &__price {
+        display: block;
+        @extend %fontPriceProduct;
+        color: $accent-color;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: 25px;
+        @extend %fontTitle;
+        color: $dark-gray;
+    }
+
+    &__description {
+        display: block;
+        @extend %fontDescription;
+        color: $dark-gray;
+    }
+}
+
+.card-tabs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    width: 100px;
+    height: 100%;
+}
+
+.card-tab {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    @extend %fontDisplayMedium;
+    background-color: $light-gray;
+    font-weight: bold;
+    cursor: pointer;
+    color: $primary-color;
+    opacity: 30%;
+
+    &_active {
+        background-color: white;
+        opacity: 100%;
+    }
+}
+
+.coffee-origin {
+    margin-top: 20px;
+    display: flex;
+}
+
+.coffee-attribute {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.coffee-description {
+    margin: 0px 10px;
+    &__attribute {
+       @extend %fontBody;
+       color: $primary-color;
+    }
+
+    &__value {
+       @extend %fontBody;
+       font-weight: bold;
+       color: $primary-color;
+    }
+}
+
+.coffee-sort-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/coffee-beans.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coffee-altitude-of-growth-icon {
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/mountain.png');
+}
