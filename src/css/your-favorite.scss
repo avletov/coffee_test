@@ -1,0 +1,53 @@
+.your-favorite {
+    display: flex;
+    position: relative;
+
+    &__left-aside {
+        width: 350px;
+        height: 700px;
+        background-color: $primary-color;
+    }
+}
+
+.your-favorite-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.card-simple {
+    display: flex;
+    width: 560px;
+    height: 256px;
+    margin: 10px;
+    background-color: white;
+
+    &__img {
+        width: 256px;
+        height: 256px;
+        background-size: cover;
+    }
+
+    &__content {
+        padding: 45px;
+    }
+
+    &__price {
+        display: block;
+        @extend %fontPriceProduct;
+        color: $accent-color;
+    }
+
+    &__name {
+        display: block;
+        @extend %fontTitle;
+    }
+
+    &__description {
+        display: block;
+        @extend %fontDescription;
+    }
+}

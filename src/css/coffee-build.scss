@@ -1,0 +1,66 @@
+.coffee-build {
+    margin-top: 50px;
+
+    &__subtitle {
+        text-align: center;
+        color: $primary-color;
+        margin: 0px 0px 7px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $primary-color;
+        margin: 0px 0px 10px;
+    }
+}
+
+.coffee-build-process {
+    display: flex;
+    justify-content: center;
+}
+
+.coffee-build-stage {
+    position: relative;
+    width: 225px;
+    height: 250px;
+    margin: 25px;
+
+    &__icon {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &_1 {
+            background-image: url('../img/build-1.png');
+        }
+
+        &_2 {
+            background-image: url('../img/build-2.png');
+        }
+
+        &_3 {
+            background-image: url('../img/build-3.png');
+        }
+
+        &_4 {
+            background-image: url('../img/build-4.png');
+        }
+    }
+
+    &__title {
+        margin: 120px 5px 10px;
+        text-align: center;
+        @extend %fontTitle;
+    }
+
+    &__text {
+        margin: 0px 5px;
+        text-align: center;
+        @extend %fontBody;
+    }
+}

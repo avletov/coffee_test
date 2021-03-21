@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 720px;
+
+    &__left-aside {
+        width: 350px;
+        position: relative;
+    }
+
+    &__central {
+        width: calc(100% - 350px - 350px);
+        background-image: url('../img/main-theme.png');
+        background-size: cover;
+        //background-position: center;
+    }
+
+    &__right-aside {
+        position: relative;
+        width: 350px;
+        background-color: $primary-color;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/revo_logo.png');
+    width: 109px;
+    height: 36px;
+
+}
+
+.main-title {
+    position: absolute;
+    left: 100px;
+    bottom: 64px;
+    @extend %fontDisplayLarge;
+
+    &__top {
+        padding: 0px 10px;
+        color: $primary-color;
+    }
+
+    &__middle {
+        padding: 0px 10px;
+        color: $light-gray;
+        background-color: $accent-color;
+    }
+
+    &__bottom {
+        padding: 0px 10px;
+        color: $primary-color;
+    }
+}
+
+.main-menu {
+    margin: 230px 55px;
+
+    &__list {
+
+    }
+
+    &__item {
+        @extend %fontPriceProduct;
+        padding: 10px 5px;
+    }
+
+    &__link {
+        color: $light-gray;
+        font-weight: lighter;
+
+        &:hover {
+            color: $accent-color-2;
+            font-weight: 800;
+        }
+    }
+    
+}
+
+.backet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 60px;
+    left: 60px;
+    background-image: url('../img/backet.png');
+    background-size: contain;
+}
+
+.counter {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #C7A17A;
+    @extend %fontBody;
+    font-size: 10px;
+    color: $accent-color-2;
+}
