@@ -4,6 +4,7 @@ $accent-color-2: #F9F5E8;
 $dark-gray: #151D28;
 $light-gray: #EDF0F5;
 $light-gray-shadow: #edf0f5cb;
+$primary-color-shadow: #4152677e;
 
 %fontDisplayLarge {
     font-family: 'Montserrat';
@@ -85,15 +86,6 @@ button {
     cursor: pointer;
 }
 
-input {
-    outline: none;
-    border: none;
-}
-
-table {
-    border-collapse: collapse;
-}
-
 .section-subtitle {
     text-align: center;
     color: $primary-color;
@@ -108,4 +100,18 @@ table {
 
 .wrapper {
     min-width: 1400px;
+}
+
+.arrow {
+    height: 20px;
+}
+
+.slider-shadow {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 42px);
+    background: linear-gradient(to left, $primary-color-shadow 0%, $primary-color-shadow calc(100% - 1300px), rgba(0, 0, 0, 0) calc(100% - 1200px));
+    z-index: 10;
 }

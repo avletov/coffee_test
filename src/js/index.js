@@ -64,9 +64,11 @@ function sliderYouFavoriteInit(data) {
 
 function sliderYouFavoriteUpdate(e) {
     const { id } = e.target;
-    if (id === 'sliderYouFavoriteLeftArrow') {
+    const id_arrow = e.target.parentNode.id;
+
+    if (id === 'sliderYouFavoriteLeftArrow' || id_arrow === 'sliderYouFavoriteLeftArrow') {
         sliderYouFavorite_page -= 1;
-    } else if (id === 'sliderYouFavoriteRightArrow') {
+    } else if (id === 'sliderYouFavoriteRightArrow' || id_arrow === 'sliderYouFavoriteRightArrow') {
         sliderYouFavorite_page += 1;
     }
 
@@ -209,9 +211,11 @@ function sliderComboInit(data) {
 
 function sliderComboUpdate(e) {
     const { id } = e.target;
-    if (id === 'sliderComboLeftArrow') {
+    const id_arrow = e.target.parentNode.id;
+
+    if (id === 'sliderComboLeftArrow' || id_arrow === 'sliderComboLeftArrow') {
         sliderCombo_page -= 1;
-    } else if (id === 'sliderComboRightArrow') {
+    } else if (id === 'sliderComboRightArrow' || id_arrow === 'sliderComboRightArrow') {
         sliderCombo_page += 1;
     }
 
@@ -227,7 +231,7 @@ function sliderComboUpdate(e) {
         sliderComboRightArrow.style.display = 'flex';
     }
 
-    sliderCombo.style.left = -350 * sliderCombo_page + 100 + 'px';
+    sliderCombo.style.left = -370 * sliderCombo_page + 100 + 'px';
 }
 
 sliderComboInit(coffee_personalized_coffee);

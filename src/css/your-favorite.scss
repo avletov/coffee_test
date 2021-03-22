@@ -37,8 +37,9 @@
         align-items: center;
         border-radius: 30px;
         color: white;
-        background-color: green;
+        background-color: $accent-color;
         cursor: pointer;
+        z-index: 20;
     }
 
     &__right-arrow {
@@ -53,8 +54,9 @@
         align-items: center;
         border-radius: 30px;
         color: white;
-        background-color: green;
+        background-color: $accent-color;
         cursor: pointer;
+        z-index: 20;
     }
 }
 

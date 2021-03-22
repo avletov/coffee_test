@@ -38,6 +38,7 @@
     left: 100px;
     bottom: 64px;
     @extend %fontDisplayLarge;
+    font-weight: 1000;
 
     &__top {
         padding: 0px 10px;
